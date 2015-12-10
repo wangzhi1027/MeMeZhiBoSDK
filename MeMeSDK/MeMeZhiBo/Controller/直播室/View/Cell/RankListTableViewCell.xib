@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RankListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bEA-zo-FFC">
+                        <rect key="frame" x="16" y="10" width="25" height="25"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="小窝" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZvM-NW-Gaf">
+                        <rect key="frame" x="58" y="10" width="137" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRJ-Qd-GmT">
+                        <rect key="frame" x="296" y="12" width="8" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="PaP-cF-84a"/>
+                            <constraint firstAttribute="width" constant="8" id="RLH-Qx-7Vb"/>
+                        </constraints>
+                        <state key="normal" image="pics/箭头.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.39999999999999963" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhC-nx-DKi">
+                        <rect key="frame" x="189" y="14" width="99" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="eAe-Se-eY5"/>
+                            <constraint firstAttribute="width" constant="99" id="gNo-V7-IQ7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics/用户默认头像" translatesAutoresizingMaskIntoConstraints="NO" id="oRN-82-B4d">
+                        <rect key="frame" x="251" y="6" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="Pyp-u4-cR7"/>
+                            <constraint firstAttribute="width" constant="32" id="RiT-pi-wjp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.39999999999999963" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgY-o5-IL4">
+                        <rect key="frame" x="178" y="11" width="138" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="138" id="EgE-AV-4Gd"/>
+                            <constraint firstAttribute="height" constant="21" id="iYe-i3-dHO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="VgY-o5-IL4" secondAttribute="bottom" constant="3" id="54t-1a-MqO"/>
+                    <constraint firstItem="fRJ-Qd-GmT" firstAttribute="leading" secondItem="oRN-82-B4d" secondAttribute="trailing" constant="13" id="8Rj-kN-bAJ"/>
+                    <constraint firstAttribute="trailing" secondItem="fRJ-Qd-GmT" secondAttribute="trailing" constant="16" id="LoU-hl-tvn"/>
+                    <constraint firstItem="fRJ-Qd-GmT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Phh-2C-E6Y"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VgY-o5-IL4" secondAttribute="trailing" constant="-4" id="f4Y-Yf-Cah"/>
+                    <constraint firstItem="fRJ-Qd-GmT" firstAttribute="leading" secondItem="MhC-nx-DKi" secondAttribute="trailing" constant="8" id="q0u-zD-s6J"/>
+                    <constraint firstItem="MhC-nx-DKi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="rI7-i4-TMx"/>
+                    <constraint firstItem="oRN-82-B4d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="rWm-Q1-0zP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="Additional" destination="VgY-o5-IL4" id="grX-w1-Huh"/>
+                <outlet property="RankProjectImage" destination="bEA-zo-FFC" id="qZe-Qt-Oi4"/>
+                <outlet property="RankingImage" destination="oRN-82-B4d" id="fWN-pz-3of"/>
+                <outlet property="jtBtn" destination="fRJ-Qd-GmT" id="gcy-mX-QAe"/>
+                <outlet property="label" destination="ZvM-NW-Gaf" id="F4C-1k-QDC"/>
+                <outlet property="numberLabel" destination="MhC-nx-DKi" id="AcT-sy-IFM"/>
+            </connections>
+            <point key="canvasLocation" x="237" y="264"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pics/用户默认头像" width="86" height="86"/>
+        <image name="pics/箭头.png" width="86" height="86"/>
+    </resources>
+</document>

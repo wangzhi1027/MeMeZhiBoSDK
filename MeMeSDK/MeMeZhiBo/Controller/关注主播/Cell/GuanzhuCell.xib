@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GuanzhuCellID" id="KGk-i7-Jjw" customClass="GuanzhuCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vPq-aY-KAD">
+                        <rect key="frame" x="16" y="14" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="HfA-OY-6AI"/>
+                            <constraint firstAttribute="width" constant="48" id="LMQ-Mw-b4n"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Eu-UV-M6z">
+                        <rect key="frame" x="80" y="29" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="UXl-Cp-2um"/>
+                            <constraint firstAttribute="width" constant="18" id="ZZs-ie-GXU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwu-Zb-Vqe">
+                        <rect key="frame" x="114" y="29" width="137" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="yUr-74-YvK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics/live_icon" translatesAutoresizingMaskIntoConstraints="NO" id="cKL-E9-oU0">
+                        <rect key="frame" x="260" y="33" width="44" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="44" id="5ft-uS-lvd"/>
+                            <constraint firstAttribute="height" constant="14" id="Idf-ht-3Xi"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="cKL-E9-oU0" secondAttribute="trailing" constant="8" id="DfC-fq-cKL"/>
+                    <constraint firstItem="vPq-aY-KAD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="EZA-mq-r8A"/>
+                    <constraint firstItem="Nwu-Zb-Vqe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="21" id="KQC-36-vv8"/>
+                    <constraint firstItem="Nwu-Zb-Vqe" firstAttribute="leading" secondItem="4Eu-UV-M6z" secondAttribute="trailing" constant="16" id="eor-p8-MIf"/>
+                    <constraint firstItem="cKL-E9-oU0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="25" id="ian-g6-RWQ"/>
+                    <constraint firstItem="cKL-E9-oU0" firstAttribute="leading" secondItem="Nwu-Zb-Vqe" secondAttribute="trailing" constant="9" id="itN-e4-D21"/>
+                    <constraint firstItem="vPq-aY-KAD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="j79-Ob-hma"/>
+                    <constraint firstItem="4Eu-UV-M6z" firstAttribute="leading" secondItem="vPq-aY-KAD" secondAttribute="trailing" constant="16" id="mID-FK-XdG"/>
+                    <constraint firstItem="4Eu-UV-M6z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="21" id="tEB-N1-xak"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="AnchorLevelImage" destination="4Eu-UV-M6z" id="i6w-9J-QO6"/>
+                <outlet property="HeadImage" destination="vPq-aY-KAD" id="cXf-XB-hz9"/>
+                <outlet property="liveImage" destination="cKL-E9-oU0" id="q8B-Le-qoV"/>
+                <outlet property="name" destination="Nwu-Zb-Vqe" id="P7f-EC-W2H"/>
+            </connections>
+            <point key="canvasLocation" x="338" y="245"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pics/live_icon" width="25" height="25"/>
+    </resources>
+</document>

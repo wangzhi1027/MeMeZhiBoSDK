@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VideoTitleView">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GpX-aP-q7r">
+                    <rect key="frame" x="8" y="8" width="194" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="HeA-U0-3nT"/>
+                        <constraint firstAttribute="width" constant="194" id="jDf-XO-Otz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMF-QY-lUy">
+                    <rect key="frame" x="18" y="23" width="175" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="LmW-r4-8Ii"/>
+                        <constraint firstAttribute="width" constant="175" id="qnA-jk-9US"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uMF-QY-lUy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="BGV-Dc-vBr"/>
+                <constraint firstAttribute="bottom" secondItem="uMF-QY-lUy" secondAttribute="bottom" id="WhA-iU-TMZ"/>
+                <constraint firstItem="GpX-aP-q7r" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="oZT-4A-Db5"/>
+                <constraint firstItem="GpX-aP-q7r" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="qNV-Hp-7An"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="idLabel" destination="uMF-QY-lUy" id="XZ3-wd-aW0"/>
+                <outlet property="nameLabel" destination="GpX-aP-q7r" id="A79-8M-pGL"/>
+            </connections>
+            <point key="canvasLocation" x="251" y="305"/>
+        </view>
+    </objects>
+</document>

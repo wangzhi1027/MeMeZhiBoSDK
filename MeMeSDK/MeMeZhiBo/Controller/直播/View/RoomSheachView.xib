@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RoomSheachView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zez-2f-mdp">
+                    <rect key="frame" x="15" y="10" width="81" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="Mtv-yG-0wm"/>
+                        <constraint firstAttribute="width" constant="81" id="jiY-xd-4Q3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="综合排名">
+                        <color key="titleColor" red="1" green="0.62745098039215685" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZV-Un-aEk">
+                    <rect key="frame" x="136" y="10" width="67" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="67" id="pnP-rD-f21"/>
+                        <constraint firstAttribute="height" constant="12" id="qSc-Pe-Rd2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="人气最高">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tj7-49-jM5">
+                    <rect key="frame" x="249" y="10" width="67" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="67" id="ePh-Oo-bp1"/>
+                        <constraint firstAttribute="height" constant="12" id="xWb-mG-wQR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="筛选">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="Tj7-49-jM5" secondAttribute="centerY" id="TXz-IM-Y3C"/>
+                <constraint firstItem="Zez-2f-mdp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="WJ3-jf-c4H"/>
+                <constraint firstAttribute="trailing" secondItem="Tj7-49-jM5" secondAttribute="trailing" constant="4" id="a5l-ef-bWp"/>
+                <constraint firstAttribute="centerX" secondItem="YZV-Un-aEk" secondAttribute="centerX" constant="-9.5" id="cVc-4D-P2q"/>
+                <constraint firstAttribute="centerY" secondItem="Zez-2f-mdp" secondAttribute="centerY" id="te0-mp-zwe"/>
+                <constraint firstItem="Zez-2f-mdp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="uCP-Mi-PyY"/>
+                <constraint firstAttribute="centerY" secondItem="YZV-Un-aEk" secondAttribute="centerY" id="yRP-fT-3bM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sheach1" destination="Zez-2f-mdp" id="HqK-FO-gdl"/>
+                <outlet property="sheach2" destination="YZV-Un-aEk" id="PfS-zV-5A7"/>
+                <outlet property="sheach3" destination="Tj7-49-jM5" id="DhB-nF-5li"/>
+            </connections>
+            <point key="canvasLocation" x="199" y="145"/>
+        </view>
+    </objects>
+</document>

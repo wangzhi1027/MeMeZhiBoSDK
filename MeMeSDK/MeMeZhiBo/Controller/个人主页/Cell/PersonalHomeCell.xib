@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonalHomeCellID" id="gTV-IL-0wX" customClass="PersonalHomeCell">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="136" height="180"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics/主播默认图.png" translatesAutoresizingMaskIntoConstraints="NO" id="8nd-cu-whD">
+                        <rect key="frame" x="5" y="5" width="126" height="142"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNH-8P-Bl9">
+                        <rect key="frame" x="5" y="152" width="29" height="20"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pics/未点赞" translatesAutoresizingMaskIntoConstraints="NO" id="ZPf-Ea-PFl">
+                                <rect key="frame" x="7" y="4" width="12" height="12"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="29" id="2mO-Ee-rwH"/>
+                            <constraint firstAttribute="height" constant="20" id="P5s-e0-UGD"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.39999999999999963" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6e-sP-WxP">
+                        <rect key="frame" x="45" y="152" width="66" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="Hd9-fI-Tlk"/>
+                            <constraint firstAttribute="height" constant="19" id="KmZ-rE-N7L"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8nd-cu-whD" secondAttribute="bottom" constant="33" id="ABj-r5-ace"/>
+                <constraint firstItem="8nd-cu-whD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="MNL-hx-rKk"/>
+                <constraint firstItem="P6e-sP-WxP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="45" id="MlX-0r-5lb"/>
+                <constraint firstAttribute="bottom" secondItem="dNH-8P-Bl9" secondAttribute="bottom" constant="8" id="NXx-5F-oNc"/>
+                <constraint firstItem="8nd-cu-whD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="OGe-l0-qvK"/>
+                <constraint firstAttribute="bottom" secondItem="P6e-sP-WxP" secondAttribute="bottom" constant="9" id="RLg-zv-SZd"/>
+                <constraint firstItem="dNH-8P-Bl9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="euF-Yq-nt5"/>
+                <constraint firstAttribute="trailing" secondItem="8nd-cu-whD" secondAttribute="trailing" constant="5" id="ja1-jc-Js5"/>
+            </constraints>
+            <size key="customSize" width="285" height="200"/>
+            <connections>
+                <outlet property="djImage" destination="ZPf-Ea-PFl" id="roi-CS-DPl"/>
+                <outlet property="djLabel" destination="P6e-sP-WxP" id="kQb-Rt-2NL"/>
+                <outlet property="djView" destination="dNH-8P-Bl9" id="imj-mY-R0V"/>
+                <outlet property="imageView" destination="8nd-cu-whD" id="NKG-6k-Hbg"/>
+            </connections>
+            <point key="canvasLocation" x="241" y="258"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pics/主播默认图.png" width="339" height="339"/>
+        <image name="pics/未点赞" width="28" height="21"/>
+    </resources>
+</document>

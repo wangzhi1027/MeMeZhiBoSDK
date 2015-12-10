@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PersonalHomeHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics/个人主页背景.png" translatesAutoresizingMaskIntoConstraints="NO" id="grC-zJ-hX9" userLabel="BgView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics/用户默认头像.png" translatesAutoresizingMaskIntoConstraints="NO" id="qfn-wv-BQT" userLabel="头像">
+                    <rect key="frame" x="136" y="76" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="NvS-2i-vhE"/>
+                        <constraint firstAttribute="width" constant="48" id="bbt-NW-jBd"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hca-17-YfN" userLabel="主播等级BgView">
+                    <rect key="frame" x="133" y="132" width="54" height="15"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics/img_star_level_12.png" translatesAutoresizingMaskIntoConstraints="NO" id="w8R-7c-j0L">
+                            <rect key="frame" x="36" y="0.0" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="18" id="maB-bH-xLo"/>
+                                <constraint firstAttribute="height" constant="18" id="vph-lc-4Ee"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics/img_user_level_0.png" translatesAutoresizingMaskIntoConstraints="NO" id="tBT-NT-E2h">
+                            <rect key="frame" x="0.0" y="3" width="28" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="28" id="bvT-8C-yUW"/>
+                                <constraint firstAttribute="height" constant="12" id="hgs-6F-qWn"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="2Nc-HC-VGu"/>
+                        <constraint firstItem="tBT-NT-E2h" firstAttribute="top" secondItem="Hca-17-YfN" secondAttribute="top" constant="3" id="7o3-sF-0yL"/>
+                        <constraint firstItem="w8R-7c-j0L" firstAttribute="leading" secondItem="tBT-NT-E2h" secondAttribute="trailing" constant="8" id="Fzz-jx-fw6"/>
+                        <constraint firstItem="w8R-7c-j0L" firstAttribute="centerY" secondItem="tBT-NT-E2h" secondAttribute="centerY" id="WDe-nK-KjF"/>
+                        <constraint firstItem="tBT-NT-E2h" firstAttribute="leading" secondItem="Hca-17-YfN" secondAttribute="leading" id="dnL-fE-Xuj"/>
+                        <constraint firstAttribute="width" constant="54" id="zez-PX-RLR"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="明星等级排名：No.110" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDf-uA-OLo" userLabel="主播明星等级Label">
+                    <rect key="frame" x="98" y="151" width="125" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ypx-PA-mKI" userLabel="主播好友关系BgView">
+                    <rect key="frame" x="60" y="174" width="200" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oF-wk-60g">
+                            <rect key="frame" x="0.0" y="0.0" width="96" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="取消关注">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancelWatchBtnTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="q6i-Il-skd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HhX-Xd-BbO">
+                            <rect key="frame" x="104" y="0.0" width="96" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="添加好友">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="addFriendsBtnTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="0xw-Vv-1kf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="7Ze-5y-upZ"/>
+                        <constraint firstAttribute="width" constant="200" id="Db0-B6-ImH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="grC-zJ-hX9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2r7-NZ-c4z"/>
+                <constraint firstItem="tDf-uA-OLo" firstAttribute="top" secondItem="Hca-17-YfN" secondAttribute="bottom" constant="4" id="JJn-G0-2gS"/>
+                <constraint firstAttribute="bottom" secondItem="Ypx-PA-mKI" secondAttribute="bottom" constant="8" id="NTn-9d-4SB"/>
+                <constraint firstItem="qfn-wv-BQT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="76" id="TT3-Lp-QCz"/>
+                <constraint firstAttribute="trailing" secondItem="grC-zJ-hX9" secondAttribute="trailing" id="VAR-sl-V0Z"/>
+                <constraint firstAttribute="centerX" secondItem="qfn-wv-BQT" secondAttribute="centerX" id="VBg-p2-Rwa"/>
+                <constraint firstItem="qfn-wv-BQT" firstAttribute="centerX" secondItem="Hca-17-YfN" secondAttribute="centerX" id="Y8O-WZ-pct"/>
+                <constraint firstItem="Ypx-PA-mKI" firstAttribute="centerX" secondItem="tDf-uA-OLo" secondAttribute="centerX" id="aQh-nl-K7H"/>
+                <constraint firstItem="tDf-uA-OLo" firstAttribute="centerX" secondItem="Hca-17-YfN" secondAttribute="centerX" constant="0.5" id="mxT-ZI-KXY"/>
+                <constraint firstAttribute="bottom" secondItem="grC-zJ-hX9" secondAttribute="bottom" id="ou9-a9-baP"/>
+                <constraint firstItem="Hca-17-YfN" firstAttribute="top" secondItem="qfn-wv-BQT" secondAttribute="bottom" constant="8" id="tsn-AE-t0q"/>
+                <constraint firstItem="grC-zJ-hX9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zeu-uu-7i9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addFriendsBtn" destination="HhX-Xd-BbO" id="NKi-9X-Vfj"/>
+                <outlet property="cancelWatchAnchorBtn" destination="0oF-wk-60g" id="efU-Ux-Uvr"/>
+                <outlet property="headImage" destination="qfn-wv-BQT" id="W9d-tR-5Ux"/>
+                <outlet property="starLevelLabel" destination="tDf-uA-OLo" id="Qv8-j7-yyU"/>
+                <outlet property="starLevelmage" destination="w8R-7c-j0L" id="seS-SZ-lua"/>
+                <outlet property="userLevelImage" destination="tBT-NT-E2h" id="PAt-pw-xdx"/>
+                <outlet property="watchAndAddFriendsBtnBgView" destination="Ypx-PA-mKI" id="Pvc-kp-BLz"/>
+            </connections>
+            <point key="canvasLocation" x="-7" y="28"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pics/img_star_level_12.png" width="28" height="21"/>
+        <image name="pics/img_user_level_0.png" width="28" height="21"/>
+        <image name="pics/个人主页背景.png" width="28" height="21"/>
+        <image name="pics/用户默认头像.png" width="86" height="86"/>
+    </resources>
+</document>

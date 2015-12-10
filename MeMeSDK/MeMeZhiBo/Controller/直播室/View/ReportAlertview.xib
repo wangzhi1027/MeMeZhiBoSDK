@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReportAlertview">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics/礼物_横线.png" translatesAutoresizingMaskIntoConstraints="NO" id="GVz-eY-Z33">
+                    <rect key="frame" x="0.0" y="80" width="260" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="yAn-cg-LP7"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics/礼物_竖线.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vi8-VD-afY">
+                    <rect key="frame" x="130" y="81" width="1" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="V7F-2E-UNO"/>
+                        <constraint firstAttribute="height" constant="40" id="hGc-7F-DvE"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="举报电话" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNB-UH-MdG">
+                    <rect key="frame" x="77" y="23" width="106" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="106" id="c4b-BR-Le6"/>
+                        <constraint firstAttribute="height" constant="21" id="waI-Nd-Neq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="021-54392351" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2h-em-dVw">
+                    <rect key="frame" x="51" y="49" width="158" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="X7X-Al-1ob"/>
+                        <constraint firstAttribute="width" constant="158" id="ZD1-Xq-OEp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" red="1" green="0.75294117650000003" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="551-OA-3Jh">
+                    <rect key="frame" x="0.0" y="81" width="131" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="131" id="Pep-B6-zWY"/>
+                        <constraint firstAttribute="height" constant="39" id="ZMJ-aH-PLk"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="tfR-7C-4Ur"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="823-v1-Nl3">
+                    <rect key="frame" x="130" y="80" width="130" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="Ial-44-9DT"/>
+                        <constraint firstAttribute="height" constant="40" id="Wtn-zG-fnJ"/>
+                    </constraints>
+                    <state key="normal" title="拨打">
+                        <color key="titleColor" red="0.98823529409999999" green="0.61568627450000002" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Dial:" destination="iN0-l3-epB" eventType="touchUpInside" id="0fd-nM-Re7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="823-v1-Nl3" secondAttribute="trailing" id="7A4-ZL-EMu"/>
+                <constraint firstAttribute="trailing" secondItem="GVz-eY-Z33" secondAttribute="trailing" id="7cO-XH-gcr"/>
+                <constraint firstItem="RNB-UH-MdG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="23" id="9l0-3O-Fxd"/>
+                <constraint firstAttribute="bottom" secondItem="GVz-eY-Z33" secondAttribute="bottom" constant="39" id="BIC-1q-Br8"/>
+                <constraint firstAttribute="centerX" secondItem="r2h-em-dVw" secondAttribute="centerX" id="HJz-aO-ByL"/>
+                <constraint firstAttribute="centerX" secondItem="RNB-UH-MdG" secondAttribute="centerX" id="HKz-Nc-pSS"/>
+                <constraint firstItem="551-OA-3Jh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ofp-Vc-YKY"/>
+                <constraint firstItem="r2h-em-dVw" firstAttribute="top" secondItem="RNB-UH-MdG" secondAttribute="bottom" constant="5" id="Uup-zm-hwQ"/>
+                <constraint firstItem="GVz-eY-Z33" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XLI-nY-jey"/>
+                <constraint firstAttribute="bottom" secondItem="823-v1-Nl3" secondAttribute="bottom" id="cQH-5K-mkj"/>
+                <constraint firstAttribute="bottom" secondItem="Vi8-VD-afY" secondAttribute="bottom" constant="-1" id="iwE-eR-BkK"/>
+                <constraint firstAttribute="bottom" secondItem="551-OA-3Jh" secondAttribute="bottom" id="uuP-vC-Nqo"/>
+                <constraint firstAttribute="centerX" secondItem="Vi8-VD-afY" secondAttribute="centerX" constant="-0.5" id="yTc-Lw-oEE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="CrossImage" destination="GVz-eY-Z33" id="UK1-5F-HaC"/>
+                <outlet property="VerticalImage" destination="Vi8-VD-afY" id="N6m-6a-c8S"/>
+            </connections>
+            <point key="canvasLocation" x="328" y="135"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pics/礼物_横线.png" width="86" height="86"/>
+        <image name="pics/礼物_竖线.png" width="86" height="86"/>
+    </resources>
+</document>

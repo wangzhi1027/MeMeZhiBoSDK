@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoadingView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics/TopBar风景" translatesAutoresizingMaskIntoConstraints="NO" id="IW7-Ad-SDc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics/主播加载.png" translatesAutoresizingMaskIntoConstraints="NO" id="wu8-ys-aXq">
+                    <rect key="frame" x="114" y="46" width="93" height="93"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="93" id="6EW-bE-bE0"/>
+                        <constraint firstAttribute="height" constant="93" id="GZd-TV-flh"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ufo-0b-TJQ">
+                    <rect key="frame" x="124" y="56" width="72" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="m7f-fN-xe7"/>
+                        <constraint firstAttribute="width" constant="72" id="sGn-cA-Ok7"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics/主播正在闪亮登场@2x .png" translatesAutoresizingMaskIntoConstraints="NO" id="Elg-iI-uaw">
+                    <rect key="frame" x="93" y="151" width="134" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="KVj-I2-wNq"/>
+                        <constraint firstAttribute="width" constant="134" id="jWh-Gh-uWp"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Ufo-0b-TJQ" secondAttribute="centerX" id="4Dp-q1-fiD"/>
+                <constraint firstItem="IW7-Ad-SDc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BGV-uS-cPD"/>
+                <constraint firstItem="IW7-Ad-SDc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RC7-5v-kpA"/>
+                <constraint firstItem="wu8-ys-aXq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="46" id="bVd-nW-D00"/>
+                <constraint firstItem="Ufo-0b-TJQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="56" id="kdj-gW-pUb"/>
+                <constraint firstAttribute="centerX" secondItem="wu8-ys-aXq" secondAttribute="centerX" id="lTv-ht-sE3"/>
+                <constraint firstAttribute="trailing" secondItem="IW7-Ad-SDc" secondAttribute="trailing" id="mPg-ow-bUe"/>
+                <constraint firstAttribute="bottom" secondItem="IW7-Ad-SDc" secondAttribute="bottom" id="nle-yp-Hrr"/>
+                <constraint firstItem="Elg-iI-uaw" firstAttribute="top" secondItem="wu8-ys-aXq" secondAttribute="bottom" constant="12" id="vBT-bE-i1x"/>
+                <constraint firstAttribute="centerX" secondItem="Elg-iI-uaw" secondAttribute="centerX" id="waJ-rT-niy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loadingImage" destination="wu8-ys-aXq" id="1g0-BN-4Nc"/>
+                <outlet property="picImage" destination="Ufo-0b-TJQ" id="046-fD-HZA"/>
+            </connections>
+            <point key="canvasLocation" x="269" y="242"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pics/TopBar风景" width="86" height="86"/>
+        <image name="pics/主播加载.png" width="86" height="86"/>
+        <image name="pics/主播正在闪亮登场@2x .png" width="86" height="86"/>
+    </resources>
+</document>

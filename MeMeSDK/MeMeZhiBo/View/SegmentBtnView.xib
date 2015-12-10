@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.94999999999999996" contentMode="scaleToFill" id="iN0-l3-epB" customClass="SegmentBtnView">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="49"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日榜" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pg3-h0-l59">
+                    <rect key="frame" x="0.0" y="14" width="80" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Krx-Ef-XfH"/>
+                        <constraint firstAttribute="height" constant="20" id="ael-zm-d7n"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FVS-56-2mP">
+                    <rect key="frame" x="27" y="36" width="26" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="c2k-DM-ckv"/>
+                        <constraint firstAttribute="height" constant="2" id="dAX-1X-8pd"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="Pg3-h0-l59" secondAttribute="centerY" id="GDa-m8-1Se"/>
+                <constraint firstAttribute="centerX" secondItem="Pg3-h0-l59" secondAttribute="centerX" id="Z37-Jh-HQV"/>
+                <constraint firstAttribute="centerX" secondItem="FVS-56-2mP" secondAttribute="centerX" id="ZLA-vM-Qts"/>
+                <constraint firstItem="FVS-56-2mP" firstAttribute="top" secondItem="Pg3-h0-l59" secondAttribute="bottom" constant="2" id="ld7-OY-zaH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="image" destination="FVS-56-2mP" id="DWK-Ly-8wl"/>
+                <outlet property="segmentLabel" destination="Pg3-h0-l59" id="TXQ-rK-kEB"/>
+                <outlet property="widht" destination="Krx-Ef-XfH" id="Ygt-3l-CRj"/>
+            </connections>
+            <point key="canvasLocation" x="252" y="291.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="noDataViewController">
+            <connections>
+                <outlet property="noDataLabel" destination="8XL-Ty-0TN" id="YUC-1r-9nY"/>
+                <outlet property="noFavoImage" destination="4YD-OW-f3H" id="zmY-uO-NY7"/>
+                <outlet property="noFavoLabel" destination="s51-ko-d0U" id="UiV-LO-hHy"/>
+                <outlet property="noMessageImage" destination="qH4-0s-jGK" id="ly8-cd-cYI"/>
+                <outlet property="noNetworkImage" destination="eTG-ir-brV" id="vAU-AX-8lx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="无网络" translatesAutoresizingMaskIntoConstraints="NO" id="eTG-ir-brV">
+                    <rect key="frame" x="128" y="176" width="65" height="89"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="ATg-Op-8tF"/>
+                        <constraint firstAttribute="height" constant="89" id="Tzp-dl-n9G"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="无信息" translatesAutoresizingMaskIntoConstraints="NO" id="qH4-0s-jGK">
+                    <rect key="frame" x="130" y="198" width="61" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="2xM-EU-bmz"/>
+                        <constraint firstAttribute="width" constant="61" id="ig4-rR-hE5"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="无主播" translatesAutoresizingMaskIntoConstraints="NO" id="4YD-OW-f3H">
+                    <rect key="frame" x="125" y="187" width="70" height="79"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="aMs-Q8-ltw"/>
+                        <constraint firstAttribute="height" constant="79" id="bbV-Sf-hS5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.39999999999999963" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi，您还没有关注过主播哦～    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XL-Ty-0TN">
+                    <rect key="frame" x="32" y="278" width="256" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="lZ9-xl-ACr"/>
+                        <constraint firstAttribute="width" constant="256" id="p91-cR-PEj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.19999999999999968" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips：可在直播间点击右上角红心按钮关注主播" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s51-ko-d0U">
+                    <rect key="frame" x="32" y="307" width="265" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="265" id="Hxo-zQ-o3b"/>
+                        <constraint firstAttribute="height" constant="21" id="iZP-ld-wdi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="eTG-ir-brV" secondAttribute="centerY" constant="63.5" id="6w0-03-fZn"/>
+                <constraint firstAttribute="centerY" secondItem="4YD-OW-f3H" secondAttribute="centerY" constant="57.5" id="Hff-zh-HHJ"/>
+                <constraint firstAttribute="centerX" secondItem="8XL-Ty-0TN" secondAttribute="centerX" id="LbF-aP-NB9"/>
+                <constraint firstItem="8XL-Ty-0TN" firstAttribute="top" secondItem="4YD-OW-f3H" secondAttribute="bottom" constant="12" id="Zhn-bd-4KV"/>
+                <constraint firstAttribute="centerX" secondItem="qH4-0s-jGK" secondAttribute="centerX" constant="-0.5" id="j49-7Z-pEC"/>
+                <constraint firstItem="s51-ko-d0U" firstAttribute="top" secondItem="8XL-Ty-0TN" secondAttribute="bottom" constant="8" id="jZl-sT-gUS"/>
+                <constraint firstAttribute="centerX" secondItem="s51-ko-d0U" secondAttribute="centerX" constant="-4.5" id="nQo-c8-MFS"/>
+                <constraint firstAttribute="centerY" secondItem="qH4-0s-jGK" secondAttribute="centerY" constant="53.5" id="x4v-ZJ-JRd"/>
+                <constraint firstAttribute="centerX" secondItem="eTG-ir-brV" secondAttribute="centerX" constant="-0.5" id="xcQ-8k-Fp5"/>
+                <constraint firstAttribute="centerX" secondItem="4YD-OW-f3H" secondAttribute="centerX" id="yLO-jD-qfW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="207" y="167"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="无主播" width="16" height="16"/>
+        <image name="无信息" width="16" height="16"/>
+        <image name="无网络" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  MeMeZhiBo
+//
+//  Created by XIN on 15/11/20.
+//  Copyright (c) 2015年 XIN. All rights reserved.
+//
+
+#ifndef MeMeZhiBo_PrefixHeader_pch
+#define MeMeZhiBo_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "GlobalDefine.h"
+    #import "Utils.h"
+#endif

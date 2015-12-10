@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KeyboardView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uth-H8-KT7">
+                    <rect key="frame" x="0.0" y="44" width="320" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="hok-fC-zk3"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sF4-p0-qbW">
+                    <rect key="frame" x="16" y="50" width="25" height="25"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="BJF-nf-F3H"/>
+                        <constraint firstAttribute="height" constant="25" id="QFF-mk-hKp"/>
+                    </constraints>
+                    <state key="normal" image="pics/直播间_聊天_@未按下@2x">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="AndWho:" destination="iN0-l3-epB" eventType="touchUpInside" id="M0L-Kt-msG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.79999999999999982" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7H-QW-XJ2">
+                    <rect key="frame" x="248" y="50" width="56" height="25"/>
+                    <color key="backgroundColor" red="0.41960784313725491" green="0.396078431372549" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="A0U-8V-gVu"/>
+                        <constraint firstAttribute="width" constant="56" id="Pxp-cp-HTm"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="发送">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="sendBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="auv-Si-mWJ"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入内容" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="poN-JY-l5Z">
+                    <rect key="frame" x="64" y="7" width="197" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="s9l-Qs-mAw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view alpha="0.19999999999999968" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyH-5T-Ng5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="cS8-IK-uji"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics/用户默认头像.png" translatesAutoresizingMaskIntoConstraints="NO" id="xgq-wT-FRu">
+                    <rect key="frame" x="16" y="6" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="2vk-OW-dRK"/>
+                        <constraint firstAttribute="height" constant="32" id="CWc-Hw-Lwv"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPe-Wq-lYA">
+                    <rect key="frame" x="279" y="10" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="L9X-0U-ysb"/>
+                        <constraint firstAttribute="height" constant="25" id="WqR-cq-CYM"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="pics/gift">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="giftLtstBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="dyZ-gt-OuS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFK-Sv-TaU">
+                    <rect key="frame" x="51" y="54" width="69" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="aPt-Ut-mrX"/>
+                        <constraint firstAttribute="width" constant="69" id="fcr-ml-HGD"/>
+                    </constraints>
+                    <state key="normal" image="pics/悄悄话未按下">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="Whisper:" destination="iN0-l3-epB" eventType="touchUpInside" id="SAW-xS-p8I"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc3-7j-J9h">
+                    <rect key="frame" x="215" y="50" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="5Oq-um-Iva"/>
+                        <constraint firstAttribute="width" constant="25" id="HgW-wq-j2f"/>
+                    </constraints>
+                    <state key="normal" image="pics/直播间_聊天_表情">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ExpressionListShow:" destination="iN0-l3-epB" eventType="touchUpInside" id="4H7-Qf-xhv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="h7H-QW-XJ2" secondAttribute="bottom" constant="5" id="1kg-Ei-rMe"/>
+                <constraint firstItem="wFK-Sv-TaU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="51" id="4zX-2f-D27"/>
+                <constraint firstAttribute="bottom" secondItem="hc3-7j-J9h" secondAttribute="bottom" constant="5" id="A16-hT-PAV"/>
+                <constraint firstAttribute="bottom" secondItem="sF4-p0-qbW" secondAttribute="bottom" constant="5" id="BjO-kl-Lhx"/>
+                <constraint firstItem="cPe-Wq-lYA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Jer-0O-HQH"/>
+                <constraint firstItem="xgq-wT-FRu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="NdP-9x-nhL"/>
+                <constraint firstItem="cPe-Wq-lYA" firstAttribute="leading" secondItem="poN-JY-l5Z" secondAttribute="trailing" constant="18" id="PY7-Rc-1kM"/>
+                <constraint firstAttribute="bottom" secondItem="wFK-Sv-TaU" secondAttribute="bottom" constant="9" id="QF9-7f-aBA"/>
+                <constraint firstAttribute="trailing" secondItem="h7H-QW-XJ2" secondAttribute="trailing" constant="16" id="Vpy-Qa-AL6"/>
+                <constraint firstItem="cyH-5T-Ng5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="YKz-a0-2Cx"/>
+                <constraint firstAttribute="trailing" secondItem="Uth-H8-KT7" secondAttribute="trailing" id="aS5-eY-5F8"/>
+                <constraint firstItem="cyH-5T-Ng5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dAt-dM-PXs"/>
+                <constraint firstAttribute="trailing" secondItem="cPe-Wq-lYA" secondAttribute="trailing" constant="16" id="fPs-28-KSS"/>
+                <constraint firstItem="poN-JY-l5Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="64" id="izb-Zc-JDa"/>
+                <constraint firstItem="poN-JY-l5Z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="j8a-RQ-geY"/>
+                <constraint firstAttribute="trailing" secondItem="hc3-7j-J9h" secondAttribute="trailing" constant="80" id="oSs-dt-MN0"/>
+                <constraint firstItem="xgq-wT-FRu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="qOA-Y4-Q6H"/>
+                <constraint firstItem="sF4-p0-qbW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="xcE-wi-Us8"/>
+                <constraint firstAttribute="trailing" secondItem="cyH-5T-Ng5" secondAttribute="trailing" id="zDR-8T-iPa"/>
+                <constraint firstAttribute="bottom" secondItem="Uth-H8-KT7" secondAttribute="bottom" id="zKY-9p-GNZ"/>
+                <constraint firstItem="Uth-H8-KT7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zjr-nu-R6t"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="BottomImage" destination="Uth-H8-KT7" id="lAd-Uh-300"/>
+                <outlet property="ExpressionBtn" destination="hc3-7j-J9h" id="Pkr-vf-IxF"/>
+                <outlet property="headImage" destination="xgq-wT-FRu" id="YPh-9z-9uZ"/>
+                <outlet property="myBtn" destination="sF4-p0-qbW" id="jwX-mQ-mie"/>
+                <outlet property="sendBtn" destination="h7H-QW-XJ2" id="1B3-G6-hYG"/>
+                <outlet property="textField" destination="poN-JY-l5Z" id="fNr-Gq-aQF"/>
+                <outlet property="whisperBtn" destination="wFK-Sv-TaU" id="8Tu-Va-Aam"/>
+            </connections>
+            <point key="canvasLocation" x="480" y="214"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pics/gift" width="86" height="86"/>
+        <image name="pics/悄悄话未按下" width="86" height="86"/>
+        <image name="pics/用户默认头像.png" width="86" height="86"/>
+        <image name="pics/直播间_聊天_@未按下@2x" width="86" height="86"/>
+        <image name="pics/直播间_聊天_表情" width="86" height="86"/>
+    </resources>
+</document>

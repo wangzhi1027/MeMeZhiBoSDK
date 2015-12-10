@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CaveoID" rowHeight="156" id="BRK-qG-m5f" customClass="CaveolaeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BRK-qG-m5f" id="AMz-2p-hyJ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="174"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pics/新人主播.png" translatesAutoresizingMaskIntoConstraints="NO" id="QhM-dN-GWD">
+                        <rect key="frame" x="12" y="13" width="15" height="15"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZK-w9-Foy" customClass="UIControl">
+                        <rect key="frame" x="233" y="8" width="90" height="26"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pics/箭头.png" translatesAutoresizingMaskIntoConstraints="NO" id="C0f-aD-ImW">
+                                <rect key="frame" x="72" y="6" width="8" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="Sm2-mt-sRr"/>
+                                    <constraint firstAttribute="width" constant="8" id="y6r-ft-9tI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示全部" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkP-k4-6kG">
+                                <rect key="frame" x="8" y="2" width="62" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CIY-WS-dT1"/>
+                                    <constraint firstAttribute="width" constant="62" id="cic-kp-IKc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IkP-k4-6kG" secondAttribute="trailing" constant="20" id="KQL-Rz-lUr"/>
+                            <constraint firstAttribute="height" constant="26" id="WHf-0I-gs7"/>
+                            <constraint firstAttribute="width" constant="90" id="dA6-Yj-6B0"/>
+                            <constraint firstAttribute="centerY" secondItem="C0f-aD-ImW" secondAttribute="centerY" constant="0.5" id="ed5-R1-rG7"/>
+                            <constraint firstAttribute="centerY" secondItem="IkP-k4-6kG" secondAttribute="centerY" constant="0.5" id="nZf-5f-m3A"/>
+                            <constraint firstAttribute="trailing" secondItem="C0f-aD-ImW" secondAttribute="trailing" constant="10" id="oFN-6c-Ax3"/>
+                        </constraints>
+                        <connections>
+                            <action selector="XiaowoViewControllerPush:" destination="BRK-qG-m5f" eventType="touchUpInside" id="jh0-dp-Inb"/>
+                        </connections>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="优秀新人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzp-PY-WYi">
+                        <rect key="frame" x="35" y="13" width="67" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HZK-w9-Foy" firstAttribute="top" secondItem="AMz-2p-hyJ" secondAttribute="topMargin" id="Bdy-Ag-bgr"/>
+                    <constraint firstItem="HZK-w9-Foy" firstAttribute="trailing" secondItem="AMz-2p-hyJ" secondAttribute="trailingMargin" constant="11" id="zx3-rl-hgi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="441" y="330.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pics/新人主播.png" width="16" height="16"/>
+        <image name="pics/箭头.png" width="16" height="16"/>
+    </resources>
+</document>
